@@ -1,0 +1,72 @@
+body {
+  background-color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table.schedule {
+  border-collapse: collapse;
+
+  &, th, td {
+    border: 1px solid #666;
+    margin-left: 0;
+    border-right: 0;
+  }
+
+  th,td {
+    &:first-child, &:last-child {
+      border-right: 1px solid #666;
+    }
+  }
+
+  td.space {
+    width: 20px;
+    border-left: 0;
+    padding: 0;
+  }
+
+  td {
+    padding: 30px;
+    text-align: center;
+
+    strong {
+      display: block;
+    }
+    em {
+      font-style: normal;
+      font-size: 0.8rem;
+    }
+
+    &:hover {
+      background-color: rgba(0,100,0,0.2);
+    }
+
+    &.lecture {
+      background-color: orange;
+
+      &:hover {
+        background-color: darken(orange, 20%);
+        color: #fff;
+      }
+    }
+    &.practices{
+      background-color: cornflowerblue;
+
+      &:hover {
+        background-color: darken(cornflowerblue, 20%);
+        color: #fff;
+      }
+    }
+
+    &.lecture, &.practice {
+      opacity: 0.4;
+    }
+
+    &.highlight {
+      opacity: 1;
+    }
+  }
+  th {
+    background-color: #aaa;
+    padding: 10px;
+  }
+}

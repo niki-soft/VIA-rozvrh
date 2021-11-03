@@ -1,0 +1,65 @@
+body {
+  background-color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table.schedule {
+  border-collapse: collapse;
+}
+table.schedule,
+table.schedule th,
+table.schedule td {
+  border: 1px solid #666;
+  margin-left: 0;
+  border-right: 0;
+}
+table.schedule th:first-child,
+table.schedule td:first-child,
+table.schedule th:last-child,
+table.schedule td:last-child {
+  border-right: 1px solid #666;
+}
+table.schedule td.space {
+  width: 20px;
+  border-left: 0;
+  padding: 0;
+}
+table.schedule td {
+  padding: 30px;
+  text-align: center;
+}
+table.schedule td strong {
+  display: block;
+}
+table.schedule td em {
+  font-style: normal;
+  font-size: 0.8rem;
+}
+table.schedule td:hover {
+  background-color: rgba(0, 100, 0, 0.2);
+}
+table.schedule td.lecture {
+  background-color: orange;
+}
+table.schedule td.lecture:hover {
+  background-color: #996300;
+  color: #fff;
+}
+table.schedule td.practices {
+  background-color: cornflowerblue;
+}
+table.schedule td.practices:hover {
+  background-color: #185bd3;
+  color: #fff;
+}
+table.schedule td.lecture,
+table.schedule td.practice {
+  opacity: 0.4;
+}
+table.schedule td.highlight {
+  opacity: 1;
+}
+table.schedule th {
+  background-color: #aaa;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
